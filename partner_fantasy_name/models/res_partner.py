@@ -1,5 +1,5 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0).
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class ResPartner(models.Model):
@@ -21,3 +21,14 @@ class ResPartner(models.Model):
         index="trigram",
         help="Commercial or trade name by which the partner is publicly known.",
     )
+
+    @api.depends("fantasy_name")
+    def _compute_display_name(self):
+        # Show the fantasy name next to the partner name, e.g. in the
+        # dropdown of every partner many2one: "NAME (FANTASY NAME)".
+        super()._compute_display_name()
+        for partner in self:
+            if partner.fantasy_name:
+                partner.display_name = (
+                    f"{partner.display_name} ({partner.fantasy_name})"
+                )
