@@ -3,7 +3,7 @@
     "name": "Partner Fantasy Name",
     "summary": "Add a Fantasy Name (trade name) to partners, searchable "
                "everywhere and available in sales and invoicing analysis.",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.1.1",
     "category": "Sales/Sales",
     "license": "LGPL-3",
     "author": "Aceleradora LA",
