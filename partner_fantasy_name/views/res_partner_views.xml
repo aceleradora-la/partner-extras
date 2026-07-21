@@ -6,7 +6,9 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='vat']" position="after">
+            <!-- Own labeled row right above the Address block, independent of
+                 what localizations (e.g. l10n_ar) do with the vat field. -->
+            <xpath expr="//span[@name='address_name']" position="before">
                 <field name="fantasy_name"/>
             </xpath>
         </field>
