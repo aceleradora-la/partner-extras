@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_form_fantasy_name" model="ir.ui.view">
+        <field name="name">res.partner.form.fantasy.name</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="fantasy_name"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_fantasy_name" model="ir.ui.view">
+        <field name="name">res.partner.select.fantasy.name</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <!-- Make the default "Name" search also match the fantasy name -->
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="filter_domain">['|', '|', '|', '|', '|', ('complete_name', 'ilike', self), ('ref', 'ilike', self), ('email', 'ilike', self), ('vat', 'ilike', self), ('company_registry', 'ilike', self), ('fantasy_name', 'ilike', self)]</attribute>
+            </xpath>
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="fantasy_name"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

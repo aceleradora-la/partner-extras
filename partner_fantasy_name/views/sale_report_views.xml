@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_order_product_search_fantasy_name" model="ir.ui.view">
+        <field name="name">sale.report.search.fantasy.name</field>
+        <field name="model">sale.report</field>
+        <field name="inherit_id" ref="sale.view_order_product_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="partner_fantasy_name" string="Fantasy Name"/>
+            </xpath>
+            <xpath expr="//filter[@name='Customer']" position="after">
+                <filter string="Fantasy Name" name="group_by_partner_fantasy_name"
+                        context="{'group_by': 'partner_fantasy_name'}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
