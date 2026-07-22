@@ -1,0 +1,65 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_fantasy_name_l10n_ar
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: partner_fantasy_name_l10n_ar
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name_l10n_ar.report_invoice_document
+msgid "<strong>Fantasy Name: </strong>"
+msgstr "<strong>Nombre de Fantasía: </strong>"
+
+#. module: partner_fantasy_name_l10n_ar
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name_l10n_ar.report_invoice_document
+msgid "<strong>Delivery Address: </strong>"
+msgstr "<strong>Dirección de Entrega: </strong>"
+
+#. module: partner_fantasy_name_l10n_ar
+#: model:ir.model.fields,field_description:partner_fantasy_name_l10n_ar.field_res_company__l10n_ar_print_fantasy_name
+#: model:ir.model.fields,field_description:partner_fantasy_name_l10n_ar.field_res_config_settings__l10n_ar_print_fantasy_name
+msgid "Print Fantasy Name on AR Invoices"
+msgstr "Imprimir Nombre de Fantasía en Facturas AR"
+
+#. module: partner_fantasy_name_l10n_ar
+#: model:ir.model.fields,field_description:partner_fantasy_name_l10n_ar.field_res_company__l10n_ar_print_delivery_address
+#: model:ir.model.fields,field_description:partner_fantasy_name_l10n_ar.field_res_config_settings__l10n_ar_print_delivery_address
+msgid "Print Delivery Address on AR Invoices"
+msgstr "Imprimir Dirección de Entrega en Facturas AR"
+
+#. module: partner_fantasy_name_l10n_ar
+#: model:ir.model.fields,help:partner_fantasy_name_l10n_ar.field_res_company__l10n_ar_print_fantasy_name
+#: model:ir.model.fields,help:partner_fantasy_name_l10n_ar.field_res_config_settings__l10n_ar_print_fantasy_name
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name_l10n_ar.res_config_settings_view_form
+msgid "Print the customer's fantasy name below their legal name on Argentinean invoices."
+msgstr "Imprimir el nombre de fantasía del cliente debajo de su razón social en las facturas argentinas."
+
+#. module: partner_fantasy_name_l10n_ar
+#: model:ir.model.fields,help:partner_fantasy_name_l10n_ar.field_res_company__l10n_ar_print_delivery_address
+#: model:ir.model.fields,help:partner_fantasy_name_l10n_ar.field_res_config_settings__l10n_ar_print_delivery_address
+msgid "Print the delivery address at the end of the customer data block on Argentinean customer invoices, when it differs from the invoice address."
+msgstr "Imprimir la dirección de entrega al final del bloque de datos del cliente en las facturas argentinas de cliente, cuando difiere de la dirección de facturación."
+
+#. module: partner_fantasy_name_l10n_ar
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name_l10n_ar.res_config_settings_view_form
+msgid "Print the delivery address on Argentinean customer invoices when it differs from the invoice address."
+msgstr "Imprimir la dirección de entrega en las facturas argentinas de cliente cuando difiere de la dirección de facturación."
+
+#. module: partner_fantasy_name_l10n_ar
+#: model:ir.model,name:partner_fantasy_name_l10n_ar.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: partner_fantasy_name_l10n_ar
+#: model:ir.model,name:partner_fantasy_name_l10n_ar.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
