@@ -12,4 +12,15 @@
         </field>
     </record>
 
+    <record id="view_invoice_tree_fantasy_name" model="ir.ui.view">
+        <field name="name">account.invoice.tree.fantasy.name</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_partner_display_name'][2]" position="after">
+                <field name="partner_fantasy_name" optional="hide" string="Fantasy Name"/>
+            </xpath>
+        </field>
+    </record>
+
 </odoo>
