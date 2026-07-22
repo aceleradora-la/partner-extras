@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_invoice_document" inherit_id="l10n_ar.report_invoice_document">
+        <!-- Fantasy name right below the customer legal name -->
+        <xpath expr="//div[@id='informations']//span[@t-field='o.partner_id.commercial_partner_id.name']" position="after">
+            <t t-if="o.company_id.l10n_ar_print_fantasy_name and o.partner_id.commercial_partner_id.fantasy_name">
+                <br/><strong>Fantasy Name: </strong><span t-field="o.partner_id.commercial_partner_id.fantasy_name"/>
+            </t>
+        </xpath>
+        <!-- Delivery address at the end of the customer data block -->
+        <xpath expr="//div[@id='informations']/div[1]" position="inside">
+            <t t-if="o.company_id.l10n_ar_print_delivery_address and o.is_sale_document(include_receipts=True) and o.partner_shipping_id and o.partner_shipping_id != o.partner_id">
+                <br/><strong>Delivery Address: </strong><span t-field="o.partner_shipping_id" t-options="{'widget': 'contact', 'fields': ['address'], 'no_marker': True, 'no_tag_br': True}"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

@@ -10,6 +10,7 @@ su propia rama: `17.0`, `18.0` y `19.0`.
 | Módulo | Descripción |
 |--------|-------------|
 | [`partner_fantasy_name`](partner_fantasy_name/) | Nombre de Fantasía en clientes/proveedores, buscable en pedidos de venta, facturas y disponible en las tablas dinámicas de los reportes de ventas y facturación. |
+| [`partner_fantasy_name_l10n_ar`](partner_fantasy_name_l10n_ar/) | Imprime el Nombre de Fantasía y (opcionalmente) la Dirección de Entrega en la factura argentina (`l10n_ar`), configurable por compañía. Se auto-instala si están `partner_fantasy_name` y `l10n_ar`. |
 
 ## Instalación
 
