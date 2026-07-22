@@ -21,6 +21,7 @@ msgid "Fantasy Name"
 msgstr "Nombre de Fantasía"
 
 #. module: partner_fantasy_name
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_invoice_tree_fantasy_name
 #: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_sales_order_filter_fantasy_name
 #: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_order_product_search_fantasy_name
 #: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_account_invoice_filter_fantasy_name
