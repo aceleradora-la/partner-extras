@@ -1,0 +1,72 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_fantasy_name
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: partner_fantasy_name
+#: model:ir.model.fields,field_description:partner_fantasy_name.field_res_partner__fantasy_name
+#: model:ir.model.fields,field_description:partner_fantasy_name.field_res_users__fantasy_name
+msgid "Fantasy Name"
+msgstr "Nombre de Fantasía"
+
+#. module: partner_fantasy_name
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_sales_order_filter_fantasy_name
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_order_product_search_fantasy_name
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_account_invoice_filter_fantasy_name
+#: model_terms:ir.ui.view,arch_db:partner_fantasy_name.view_account_invoice_report_search_fantasy_name
+msgid "Fantasy Name"
+msgstr "Nombre de Fantasía"
+
+#. module: partner_fantasy_name
+#: model:ir.model.fields,field_description:partner_fantasy_name.field_sale_order__partner_fantasy_name
+#: model:ir.model.fields,field_description:partner_fantasy_name.field_sale_report__partner_fantasy_name
+msgid "Customer Fantasy Name"
+msgstr "Nombre de Fantasía del Cliente"
+
+#. module: partner_fantasy_name
+#: model:ir.model.fields,field_description:partner_fantasy_name.field_account_move__partner_fantasy_name
+#: model:ir.model.fields,field_description:partner_fantasy_name.field_account_invoice_report__partner_fantasy_name
+msgid "Partner Fantasy Name"
+msgstr "Nombre de Fantasía del Contacto"
+
+#. module: partner_fantasy_name
+#: model:ir.model.fields,help:partner_fantasy_name.field_res_partner__fantasy_name
+#: model:ir.model.fields,help:partner_fantasy_name.field_res_users__fantasy_name
+msgid "Commercial or trade name by which the partner is publicly known."
+msgstr "Nombre comercial o de fantasía con el que se conoce públicamente al contacto."
+
+#. module: partner_fantasy_name
+#: model:ir.model,name:partner_fantasy_name.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_fantasy_name
+#: model:ir.model,name:partner_fantasy_name.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: partner_fantasy_name
+#: model:ir.model,name:partner_fantasy_name.model_sale_report
+msgid "Sales Analysis Report"
+msgstr "Informe de análisis de ventas"
+
+#. module: partner_fantasy_name
+#: model:ir.model,name:partner_fantasy_name.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: partner_fantasy_name
+#: model:ir.model,name:partner_fantasy_name.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Estadísticas de facturas"
