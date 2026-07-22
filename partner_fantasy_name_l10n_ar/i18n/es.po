@@ -16,13 +16,13 @@ msgstr ""
 
 #. module: partner_fantasy_name_l10n_ar
 #: model_terms:ir.ui.view,arch_db:partner_fantasy_name_l10n_ar.report_invoice_document
-msgid "<strong>Fantasy Name: </strong>"
-msgstr "<strong>Nombre de Fantasía: </strong>"
+msgid "<br/><strong>Fantasy Name: </strong>"
+msgstr "<br/><strong>Nombre de Fantasía: </strong>"
 
 #. module: partner_fantasy_name_l10n_ar
 #: model_terms:ir.ui.view,arch_db:partner_fantasy_name_l10n_ar.report_invoice_document
-msgid "<strong>Delivery Address: </strong>"
-msgstr "<strong>Dirección de Entrega: </strong>"
+msgid "<br/><strong>Delivery Address: </strong>"
+msgstr "<br/><strong>Dirección de Entrega: </strong>"
 
 #. module: partner_fantasy_name_l10n_ar
 #: model:ir.model.fields,field_description:partner_fantasy_name_l10n_ar.field_res_company__l10n_ar_print_fantasy_name
