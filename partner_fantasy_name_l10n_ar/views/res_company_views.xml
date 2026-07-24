@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- The two print toggles live on the company form (not in the general
+         Settings form): every res.config.settings view inherits a single
+         shared base form, so adding a setting there forces Odoo to
+         re-validate the whole combined form and can fail on unrelated,
+         not-yet-loaded fields contributed by other modules. The company
+         form is small and self-contained, so this is robust to install. -->
+    <record id="view_company_form_fantasy_name" model="ir.ui.view">
+        <field name="name">res.company.form.fantasy.name.l10n.ar</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_info']" position="inside">
+                <group string="Argentinean Invoices" name="l10n_ar_fantasy_name_print">
+                    <field name="l10n_ar_print_fantasy_name"/>
+                    <field name="l10n_ar_print_delivery_address"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
