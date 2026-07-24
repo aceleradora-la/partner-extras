@@ -9,8 +9,9 @@ Imprime datos adicionales en el PDF de la factura de la localización argentina
   documentos de venta (facturas, notas de crédito, recibos) y cuando difiere
   de la dirección de facturación. *Desactivado por defecto.*
 
-Ambas opciones se configuran en **Ajustes → Facturación → Facturas de
-cliente**, por compañía.
+Ambas opciones se configuran en el **formulario de la compañía**
+(Ajustes → Usuarios y compañías → Compañías → pestaña *Información general*,
+grupo *Facturas Argentinas*), por compañía.
 
 ## Instalación
 

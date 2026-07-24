@@ -3,7 +3,7 @@
     "name": "Partner Fantasy Name - Argentina",
     "summary": "Print the partner's fantasy name and the delivery address "
                "on Argentinean invoices (configurable per company).",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.1.0",
     "category": "Accounting/Localizations",
     "license": "LGPL-3",
     "author": "Aceleradora LA",
@@ -14,7 +14,7 @@
     ],
     "auto_install": True,
     "data": [
-        "views/res_config_settings_views.xml",
+        "views/res_company_views.xml",
         "report/report_invoice.xml",
     ],
     "installable": True,
